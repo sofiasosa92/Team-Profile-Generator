@@ -1,10 +1,5 @@
 # Team-Profile-Generator
 
-Deployed link:
-
-
-# Professional README Generator  
-    
 ## Table of Contents:
     
 * [Description](#Description)
@@ -35,7 +30,7 @@ Deployed link:
 ### Credits:
 Sofia Sosa 
 ### link:
-https://github.com/sofiasosa92/Professional-README-Generator
+
 ### License:
 ![License: MIT](https://img.shields.io/github/license/TheInfamousGrim/orm-e-commerce-back-end?color=yellow)
 
