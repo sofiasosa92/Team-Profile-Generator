@@ -37,7 +37,9 @@ Sofia Sosa
 ### link:
 https://github.com/sofiasosa92/Professional-README-Generator
 ### License:
-MIT
+![License: MIT](https://img.shields.io/github/license/TheInfamousGrim/orm-e-commerce-back-end?color=yellow)
+
+[MIT License](/LICENSE)
 
 ### Questions?:
 If you have any questions contact me on [GitHub](https://github.com/undefined) or contact 
