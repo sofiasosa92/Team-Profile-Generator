@@ -9,7 +9,10 @@ Deployed link:
     
 * [Description](#Description)
 * [Installation](#installation)
+* [Screenshot](#ScreenShot)
 * [Usage](#usageInfo)
+* [Video Demo](#Video)
+* [Technology](#Technology)
 * [Credits](#Credits)
 * [link](#link)
 * [License](#license)
@@ -21,10 +24,16 @@ Deployed link:
 
 ### Installation:
 
+### Screenshot:
+
 ### Usage:
 
+### Video Demo:
+
+### Technology:
+
 ### Credits:
-Sofia 
+Sofia Sosa 
 ### link:
 https://github.com/sofiasosa92/Professional-README-Generator
 ### License:
