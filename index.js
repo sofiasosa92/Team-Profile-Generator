@@ -1,21 +1,44 @@
-// packages needed for this application
+//need for this application
 const inquirer = require('inquirer');
-const path = require('path');
 const fs = require('fs');
-
-
+const generateTeam = require('./src/template');
 
 console.log("Welcome, please enter your information to the team roster:")
 
-//array of questions for employee input
-const questions = () =>
-    inquirer.prompt([
+
+// js lib
+const Manager = require('./lib/manager');
+const Engineer = require('./lib/engineer');
+const Intern = require('./lib/intern');
+
+//array of questions input
+const newStaff = [];
+
+const questions = async () => {
+    const amswers = await inquirer
+    .prompt ([
         {
-            type: "input",
-            name: "name",
-            message: "name:",
-        }]);
-        
+            type: 'input',
+            message: 'Name?',
+            name: 'name',
+        },
+        {
+            type: 'input',
+            message: 'Email?',
+            name: 'email',
+        },
+        {
+            type: 'input',
+            message: 'Role?',
+            name: 'role',
+            choices: ['Manager', 'Engineer', 'Intern'],
+        },
+        {
+            
+        }
+    ])
+}
+
 //classes (manager, engineer, intern)
 
 //output directory
