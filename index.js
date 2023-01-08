@@ -6,7 +6,7 @@ const fs = require('fs');
 const managerCard = require('./src/manager.card');
 const engineerCard = require('./src/engineer.card');
 const internCard = require('./src/intern.card');
-const team = require('./src/teamHTML');
+const HTML = require('./src/teamHTML');
 
 
 //terminal message
@@ -46,7 +46,7 @@ const managerQst = [
     },
 ];
 
-        //Engineer//
+//Engineer//
 const engineerQst = [
     {
         type: 'input',
@@ -70,7 +70,7 @@ const engineerQst = [
     },
 ];
 
-        //Intern//
+//Intern//
 const internQst = [
     {
         type: 'input',
@@ -96,49 +96,87 @@ const internQst = [
 
 //functions to build the team
 
-        //Manager//
+//Manager//
 function main() {
     inquirer.prompt(managerQst).then(response => {
         const manager = new Manager
-        (
-            repsonse.name,
-            response.Id,
-            response.Email,
-            response.OfficeNumber,
-        )
+            (
+                response.name,
+                response.Id,
+                response.Email,
+                response.OfficeNumber,
+            )
         team.push(manager)
         addMember()
     })
 }
 
-        //Engineer//
+//Engineer//
 function addEngineer() {
     inquirer.prompt(engineerQst)
-    .then(response => {
-        const engineer = new Engineer(
-            repsonse.name,
-            response.Id,
-            response.Email,
-            response.GitHub,
-        )
-        team.push(engineer)
-        addMember()
-    })
+        .then(response => {
+            const engineer = new Engineer(
+                response.name,
+                response.Id,
+                response.Email,
+                response.GitHub,
+            )
+            team.push(engineer)
+            addMember()
+        })
 }
-        //Intern//
+//Intern//
 function addIntern() {
     inquirer.prompt(internQst).then(response => {
         const intern = new Intern
-        (
-            repsonse.name,
-            response.Id,
-            response.Email,
-            response.School,
-        )
+            (
+                response.name,
+                response.Id,
+                response.Email,
+                response.School,
+            )
         team.push(intern)
         addMember()
     })
 }
+
+//Build the team function//
+function teamBuild() {
+    console.log(team)
+    let cards = ''
+    for (i = 0; i < team.length; i++) {
+        if (team[i].getRole() === 'Manager') {
+            cards = cards + managerCard(team[i])
+        } else if (team[i].getRole() === 'Engineer') {
+            cards = cards + internCard(team[i])
+        }
+    }
+    fs.writeFileSync('./dist/team.html', body(cards))
+}
+
+//to add a new team member function//
+function addMember() {
+    inquirer.prompt([{
+        type: 'list',
+        message: 'Do you want to add a role?',
+        name: 'Roles',
+        choices: ['Engineer', 'Intern', 'Create Team'],
+    }]).then(response => {
+        if (response.Roles === 'Engineer') {
+            addEngineer()
+        }
+        else if (response.Roles === 'Intern') {
+            addIntern()
+        }
+        else {
+            teamBuild()
+        }
+    })
+}
+
+main()
+
+
 
 
 
