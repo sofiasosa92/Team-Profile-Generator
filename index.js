@@ -16,28 +16,10 @@ console.log("Welcome, please enter your information to the team roster:")
 const Manager = require('./lib/manager');
 const Engineer = require('./lib/engineer');
 const Intern = require('./lib/intern');
+const { assertEnumDefaultedMember } = require('@babel/types');
 
 //array of team members
 const team = [];
-
-//Function to add role
-function addMember() {
-    inquirer.prompt([
-        {
-            type: 'list',
-            name: 'member',
-            message: 'Add a role to your team:',
-            choices: ['Manager', 'Engineer', 'Intern']
-        }
-    ])
-    .then((response) => {
-        if (repsonse.teamRole === 'Engineer') {
-            engineerQst();
-        } else if (response.teamRole === 'Intern') {
-            internQst();
-        }
-    });
-}
 
 //specific employee questions
 //Manager//
@@ -112,8 +94,62 @@ const internQst = [
     },
 ];
 
-//functions to add the team
-function 
+//functions to build the team
+
+        //Manager//
+function main() {
+    inquirer.prompt(managerQst).then(response => {
+        const manager = new Manager
+        (
+            repsonse.name,
+            response.Id,
+            response.Email,
+            response.OfficeNumber,
+        )
+        team.push(manager)
+        addMember()
+    })
+}
+
+        //Engineer//
+function addEngineer() {
+    inquirer.prompt(engineerQst)
+    .then(response => {
+        const engineer = new Engineer(
+            repsonse.name,
+            response.Id,
+            response.Email,
+            response.GitHub,
+        )
+        team.push(engineer)
+        addMember()
+    })
+}
+        //Intern//
+function addIntern() {
+    inquirer.prompt(internQst).then(response => {
+        const intern = new Intern
+        (
+            repsonse.name,
+            response.Id,
+            response.Email,
+            response.School,
+        )
+        team.push(intern)
+        addMember()
+    })
+}
+
+
+
+
+
+
+
+
+
+
+
 
 //import HTML 
 
