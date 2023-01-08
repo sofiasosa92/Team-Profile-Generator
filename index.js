@@ -17,8 +17,27 @@ const Manager = require('./lib/manager');
 const Engineer = require('./lib/engineer');
 const Intern = require('./lib/intern');
 
-//array of team
+//array of team members
 const team = [];
+
+//Function to add role
+function addMember() {
+    inquirer.prompt([
+        {
+            type: 'list',
+            name: 'member',
+            message: 'Add a role to your team:',
+            choices: ['Manager', 'Engineer', 'Intern']
+        }
+    ])
+    .then((response) => {
+        if (repsonse.teamRole === 'Engineer') {
+            engineerQst();
+        } else if (response.teamRole === 'Intern') {
+            internQst();
+        }
+    });
+}
 
 //specific employee questions
 //Manager//
@@ -45,7 +64,7 @@ const managerQst = [
     },
 ];
 
-//Engineer//
+        //Engineer//
 const engineerQst = [
     {
         type: 'input',
@@ -93,16 +112,10 @@ const internQst = [
     },
 ];
 
-
-
-//output directory
-
-//output file path and name
+//functions to add the team
+function 
 
 //import HTML 
-
-//array of team members
-// const teamMembers = [];
 
 
 //HTML file
