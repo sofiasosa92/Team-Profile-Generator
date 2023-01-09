@@ -144,6 +144,7 @@ function addIntern() {
 function teamBuild() {
     console.log(team)
     let cards = ''
+
     for (i = 0; i < team.length; i++) {
         if (team[i].getRole() === 'Manager') {
             cards = cards + managerCard(team[i])
@@ -154,8 +155,8 @@ function teamBuild() {
             cards = cards + internCard(team[i])
         }
     }
-
-    const html = fs.readFileSync('./output/myteam.html', body(cards));
+    // write the file function 
+    fs.writeFileSync('./')
 
 }
 
