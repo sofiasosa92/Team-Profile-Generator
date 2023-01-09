@@ -6,7 +6,7 @@ const fs = require('fs');
 const managerCard = require('./src/manager.card');
 const engineerCard = require('./src/engineer.card');
 const internCard = require('./src/intern.card');
-const HTML = require('./src/teamHTML');
+const body = require('./src/team-body');
 
 
 //terminal message
@@ -16,7 +16,7 @@ console.log("Welcome, please enter your information to the team roster:")
 const Manager = require('./lib/manager');
 const Engineer = require('./lib/engineer');
 const Intern = require('./lib/intern');
-const { assertEnumDefaultedMember } = require('@babel/types');
+
 
 //array of team members
 const team = [];
@@ -148,10 +148,15 @@ function teamBuild() {
         if (team[i].getRole() === 'Manager') {
             cards = cards + managerCard(team[i])
         } else if (team[i].getRole() === 'Engineer') {
+            cards = cards + engineerCard(team[i])
+        }
+        else if (team[i].getRole() === 'Intern') {
             cards = cards + internCard(team[i])
         }
     }
-    fs.writeFileSync('./dist/team.html', body(cards))
+
+    const html = fs.readFileSync('./output/myteam.html', body(cards));
+
 }
 
 //to add a new team member function//
@@ -160,9 +165,12 @@ function addMember() {
         type: 'list',
         message: 'Do you want to add a role?',
         name: 'Roles',
-        choices: ['Engineer', 'Intern', 'Create Team'],
+        choices: ['Manager', 'Engineer', 'Intern', 'Create Team'],
     }]).then(response => {
-        if (response.Roles === 'Engineer') {
+        if (response.Roles === 'Manager') {
+            main()
+        }
+        else if (response.Roles === 'Engineer') {
             addEngineer()
         }
         else if (response.Roles === 'Intern') {
@@ -175,27 +183,6 @@ function addMember() {
 }
 
 main()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//import HTML 
-
-
-//HTML file
-
-
-//Deploy application
 
 
 
