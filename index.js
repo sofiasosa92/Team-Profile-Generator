@@ -155,8 +155,9 @@ function teamBuild() {
             cards = cards + internCard(team[i])
         }
     }
-    // write the file function 
-    fs.writeFileSync('./')
+    // write the file function
+    console.log(cards) 
+    fs.writeFileSync('./dist/myteam.html', body(cards))
 
 }
 
