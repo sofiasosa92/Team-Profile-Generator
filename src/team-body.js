@@ -8,7 +8,7 @@ function body(cards) {
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Team</title>
+        <title>Team Profile Generator</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
             integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link rel="stylesheet" href="./style.css">
@@ -19,6 +19,9 @@ function body(cards) {
         <h1>My Team</h1>
                          
     ${cards}
+    </div>
+    </div>
+    </div>
     </body>
     
     </html>

@@ -1,5 +1,7 @@
+
 body {
-background-color: rgb(194, 191, 191);
+background-color: rgb(227, 221, 221);
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 h1 {
@@ -8,8 +10,25 @@ h1 {
     text-align: center;
     background-color: #c6bbab;
     padding: 2rem;
-}
+} 
 
 
+ .wrap {
+    display:flex;
+    flex-wrap: nowrap;
+    /* width:100px;
+    margin:auto;
+    margin-top: 100px; */
+ }
 
-
+ .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+    transition: 0.4s;
+    width: 300px;
+    background: white;
+    text-align: center;
+    font-size: 16px;
+    font-family: sans-serif;
+    float: left;
+    margin: 10px;
+ }

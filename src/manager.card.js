@@ -13,6 +13,7 @@ function managerCard(manager) {
             </svg>
         
                     <!--Manager box-->
+                    
             <div class="card-body">
                 <h2 class="card-title">${manager.name}</h2>
                 <h4 class="card-text">${manager.getRole()}</h4>
