@@ -160,7 +160,6 @@ function teamBuild() {
     fs.writeFileSync('./dist/myteam.html', body(cards))
 
 }
-
 //to add a new team member function//
 function addMember() {
     inquirer.prompt([{
