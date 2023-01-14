@@ -24,6 +24,7 @@ The script is defining 3 different classes for Manager, Engineer and Intern and 
 
 ### Video Demo:
 
+
 ### Usage:
 While in the main folder of the project, enter the following command to execute the chain of prompts of the generator: 
 
