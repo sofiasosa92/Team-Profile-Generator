@@ -16,6 +16,10 @@
 * [Questions?](#questions)
 
 ### Description:
+For this weeks challenge i used the inquirer library to prompt the user to enter information about team members and creating a file that contains the information entered by the user in HTML format.
+The script is using the inquirer library to prompt the user for specific information about each role and create an instance of each class.
+The script is defining 3 different classes for ####Manager, ####Engineer and ####Intern and then creating instances of these classes based on the user input.
+
 
 ### Installation:
 
