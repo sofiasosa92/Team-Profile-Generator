@@ -32,7 +32,7 @@ Answer all the questions, then click 'Create Team' and your HTML file will be cr
 ### Video Demo:
 
 ### Technology used:
-[![Bootstrap](https://img.shields.io/badge/-Bootstrap-blueviolet?logo=bootstrap&logoColor=white&style=for-the-badge)
+![Bootstrap](https://img.shields.io/badge/-Bootstrap-blueviolet?logo=bootstrap&logoColor=white&style=for-the-badge)
 
 [![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)](https://www.javascript.com/)
 
