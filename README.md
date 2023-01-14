@@ -51,6 +51,8 @@ Answer all the questions, then click 'Create Team' and your HTML file will be cr
 
 ### Link:
 
+(https://sofiasosa92.github.io/Team-Profile-Generator/)
+
 ### Questions?:
 If you have any questions contact me on [GitHub](https://github.com/undefined) or contact 
 Sofia  at sofiasosaperez@outlook.com  
