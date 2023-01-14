@@ -9,7 +9,7 @@
 * [Video Demo](#Video)
 * [Usage](#usageInfo)
 * [Technology](#Technology)
-* [link](#link)
+* [Link](#link)
 * [GitHub](#github)
 * [Email](#email)
 * [Questions?](#questions)
@@ -43,7 +43,7 @@ Answer all the questions, then click 'Create Team' and your HTML file will be cr
 
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://www.w3.org/TR/CSS/#css)
 
-### link:
+### Link:
 
 ### Questions?:
 If you have any questions contact me on [GitHub](https://github.com/undefined) or contact 
