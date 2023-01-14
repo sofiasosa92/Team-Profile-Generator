@@ -21,7 +21,7 @@ function internCard(intern) {
             </div>
             <ul class="list-group list-group-flush font-weight-bold">
                 <li class="list-group-item">Employee ID: ${intern.id}</li>
-                <li class="list-group-item">Email: <a href="mailto: ${intern.Email}"> ${intern.Email}</a></li>
+                <li class="list-group-item">Email: <a href="mailto: ${intern.email}"> ${intern.email}</a></li>
                 <li class="list-group-item">School: ${intern.school}</li>
             </ul>
         </div>

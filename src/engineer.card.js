@@ -1,8 +1,6 @@
-const Intern = require("../lib/intern")
 
 function engineerCard(engineer) {
     return `
-
 
         <div class="card box-shadow shadow-lg shadow-black" style="width: 18rem">
             <!--user icon -->
@@ -11,19 +9,19 @@ function engineerCard(engineer) {
 
                 <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
                 <path fill-rule="evenodd"
-                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />s
             </svg>
         
                     <!--Engineer box-->
             <div class="card-body">
-                <h2 class="card-title">${engineer.Name}</h2>
+                <h2 class="card-title">${engineer.name}</h2>
                 <h4 class="card-text">${engineer.getRole()} </h4>
             </div>
             <ul class="list-group list-group-flush font-weight-bold">
                 <li class="list-group-item">Employee ID: ${engineer.id}</li>
-                <li class="list-group-item">Email: <a href="mailto: ${engineer.Email}">${engineer.Email}</a></li>
-                <li class="list-group-item">
-  <a href="https://github.com/${engineer.GitHub}" target="_blank">GitHub: ${engineer.GitHub}</a>
+                <li class="list-group-item">Email: <a href="mailto: ${engineer.email}">${engineer.email}</a></li>
+                <li class="list-group-item"> GitHub: 
+  <a href="https://github.com/${engineer.github}" target="_blank">${engineer.github}</a>
 </li>
             </ul>
         </div>

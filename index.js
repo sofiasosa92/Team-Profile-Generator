@@ -101,7 +101,7 @@ function main() {
     inquirer.prompt(managerQst).then(response => {
         const manager = new Manager
             (
-                response.name,
+                response.Name,
                 response.Id,
                 response.Email,
                 response.OfficeNumber,
@@ -116,7 +116,7 @@ function addEngineer() {
     inquirer.prompt(engineerQst)
         .then(response => {
             const engineer = new Engineer(
-                response.name,
+                response.Name,
                 response.Id,
                 response.Email,
                 response.GitHub,
@@ -130,7 +130,7 @@ function addIntern() {
     inquirer.prompt(internQst).then(response => {
         const intern = new Intern
             (
-                response.name,
+                response.Name,
                 response.Id,
                 response.Email,
                 response.School,

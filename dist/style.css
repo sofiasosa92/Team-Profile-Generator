@@ -32,3 +32,10 @@ h1 {
     float: left;
     margin: 10px;
  }
+
+ .card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}

@@ -20,7 +20,7 @@ function managerCard(manager) {
             </div>
             <ul class="list-group list-group-flush font-weight-bold">
                 <li class="list-group-item">Employee ID: ${manager.id}</li>
-                <li class="list-group-item">Email: <a href="mailto:${manager.Email}">${manager.Email}</a></li>
+                <li class="list-group-item">Email: <a href="mailto:${manager.email}">${manager.email}</a></li>
                 <li class="list-group-item">Office Number: ${manager.officeNumber}</li>
             </ul>
         </div>
