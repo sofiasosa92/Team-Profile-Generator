@@ -6,8 +6,8 @@
     
 * [Description](#Description)
 * [Screenshot](#ScreenShot)
-* [Usage](#usageInfo)
 * [Video Demo](#Video)
+* [Usage](#usageInfo)
 * [Technology](#Technology)
 * [link](#link)
 * [GitHub](#github)
@@ -15,11 +15,13 @@
 * [Questions?](#questions)
 
 ### Description:
-For this weeks challenge i used the inquirer library to prompt the user to enter information about team members and creating a file that contains the information entered by the user in HTML format.
+For this week's challenge I created a team profile generator that allows the user to add and create employee profiles using the integrated terminal. I used the inquirer library to prompt the user to enter information about the team member of their choosing and creating a file that contains the information entered by the user in HTML format.
 The script is using the inquirer library to prompt the user for specific information about each role and create an instance of each class.
-The script is defining 3 different classes for ####Manager, ####Engineer and ####Intern and then creating instances of these classes based on the user input.
+The script is defining 3 different classes for Manager, Engineer and Intern and then creating instances of these classes based on the user input.
 
 ### Screenshot:
+
+### Video Demo:
 
 ### Usage:
 While in the main folder of the project, enter the following command to execute the chain of prompts of the generator: 
@@ -27,9 +29,6 @@ While in the main folder of the project, enter the following command to execute 
 ```node index```
 
 Answer all the questions, then click 'Create Team' and your HTML file will be created.
-
-
-### Video Demo:
 
 ### Technology used:
 ![Bootstrap](https://img.shields.io/badge/-Bootstrap-blueviolet?logo=bootstrap&logoColor=white&style=for-the-badge)
