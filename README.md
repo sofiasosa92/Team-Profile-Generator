@@ -5,7 +5,6 @@
 ## Table of Contents:
     
 * [Description](#Description)
-* [Installation](#installation)
 * [Screenshot](#ScreenShot)
 * [Usage](#usageInfo)
 * [Video Demo](#Video)
@@ -20,9 +19,6 @@ For this weeks challenge i used the inquirer library to prompt the user to enter
 The script is using the inquirer library to prompt the user for specific information about each role and create an instance of each class.
 The script is defining 3 different classes for ####Manager, ####Engineer and ####Intern and then creating instances of these classes based on the user input.
 
-
-### Installation:
-
 ### Screenshot:
 
 ### Usage:
@@ -36,8 +32,7 @@ Answer all the questions, then click 'Create Team' and your HTML file will be cr
 ### Video Demo:
 
 ### Technology used:
-
-[Bootstrap](https://bootstrap.com/)
+[![Bootstrap](https://img.shields.io/badge/-Bootstrap-blueviolet?logo=bootstrap&logoColor=white&style=for-the-badge)
 
 [![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)](https://www.javascript.com/)
 
