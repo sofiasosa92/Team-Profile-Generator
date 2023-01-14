@@ -24,8 +24,8 @@ The script is defining 3 different classes for Manager, Engineer and Intern and 
 
 ### Video Demo:
 <video width="320" height="240" controls>
-  <source src="path/to/video.mp4" type="video/mp4">
-  <source src="assets/Team Profile Generator.mov" type="video/ogg">
+  <source src="path/to/video.mov" type="video/mov">
+  <source src="assets/tpg.mov" type="video/ogg">
 </video>
 
 ### Usage:
