@@ -23,6 +23,10 @@ The script is defining 3 different classes for Manager, Engineer and Intern and 
 ![Screen Shot 2023-01-13 at 10 02 09 PM](https://user-images.githubusercontent.com/115671262/212457329-6f4d7035-1445-46c4-889e-8fab2c05dea3.png)
 
 ### Video Demo:
+<video width="320" height="240" controls>
+  <source src="path/to/video.mp4" type="video/mp4">
+  <source src="assets/Team Profile Generator.mov" type="video/ogg">
+</video>
 
 ### Usage:
 While in the main folder of the project, enter the following command to execute the chain of prompts of the generator: 
