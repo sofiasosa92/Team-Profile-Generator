@@ -26,8 +26,10 @@ The script is defining 3 different classes for ####Manager, ####Engineer and ###
 ### Screenshot:
 
 ### Usage:
-While in the main folder of the project, enter the following command to execute the chain of prompts of the generator:
+While in the main folder of the project, enter the following command to execute the chain of prompts of the generator: 
+
 ```node index```
+
 Answer all the questions, then click 'Create Team' and your HTML file will be created.
 
 
