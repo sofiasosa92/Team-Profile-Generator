@@ -15,10 +15,12 @@ function body(cards) {
     </head>
     
     <body>
+
     
         <h1>My Team</h1>
-                         
+            <div class="container">             
     ${cards}
+    </div>
     </div>
     </div>
     </div>
