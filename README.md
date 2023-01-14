@@ -20,6 +20,7 @@ The script is using the inquirer library to prompt the user for specific informa
 The script is defining 3 different classes for Manager, Engineer and Intern and then creating instances of these classes based on the user input.
 
 ### Screenshot:
+![Screen Shot 2023-01-13 at 10 02 09 PM](https://user-images.githubusercontent.com/115671262/212457329-6f4d7035-1445-46c4-889e-8fab2c05dea3.png)
 
 ### Video Demo:
 
